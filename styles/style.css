@@ -37,6 +37,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 2em;
+    padding: 2em;
   
     
 }
@@ -56,7 +58,7 @@ span {
 }
 .container__conteudo {
     padding: 2em;
-    width: 550px;
+    width: 50%;
 }
 
 .texto {
@@ -92,7 +94,7 @@ span {
     width: 30%;
     padding: 1em 2em;
     text-align: center;
-    font-size: 20px;
+    font-size: 1.2em;
     text-decoration: none;
     border-radius: 10px;
     color: var(--cor-secundaria);
@@ -112,17 +114,13 @@ span {
     font-family: var(--fonte-texto);
     font-size: 16px;
     font-weight: bold;
+    margin-top: 2em;
 }
 
 .cabecalho__menu__link:hover {
     color: var(--cor-terciaria);
 }
 
-.container__sobremim {
-    display: flex;
-    justify-content: center;
-    padding: 2em 0 2em 0;
-}
 
 .titulo__sobremim {
     color: var(--cor-terciaria);
@@ -131,10 +129,28 @@ span {
     font-family: var(--fonte-titulo);
 } 
 
-.texto__sobremim {
-    font-size: 1.5em;
-    text-align: justify;
-    font-family: var(--fonte-texto);
-    padding: 2em;
+@media (max-width: 1020px) {
+    .cabecalho {
+        padding: 6%;
 
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .container {
+        flex-direction: column-reverse;
+        padding: 1em;
+    }
+
+    .container__conteudo {
+        width: auto;
+    }
+
+    .foto_perfil {
+        margin: 0;
+    }
+    
+    
 }
